@@ -1,16 +1,13 @@
 {
   "hosting": {
     "public": "frontend/dist",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
         "source": "**",
         "destination": "/index.html"
       }
-    ]
+    ],
+    "predeploy": ["cd frontend && pnpm install && pnpm run build"]
   }
 }
