@@ -12,10 +12,8 @@ async function bootstrap() {
   app.use(cookieParser());
 
   app.use((req: Request, res: Response, next: NextFunction) => {
-    res.setHeader(
-      'Cross-Origin-Opener-Policy',
-      'same-origin; same-origin-allow-popups',
-    );
+    res.setHeader('Cross-Origin-Opener-Policy', 'restrict-properties');
+    res.setHeader('Cross-Origin-Embedder-Policy', 'require-corp');
     next();
   });
 
