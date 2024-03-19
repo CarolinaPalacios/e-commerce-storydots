@@ -6,8 +6,6 @@ import { AppController } from './app.controller';
 import { DataLoaderService } from './utils/data-loader.service';
 import { BrandsModule } from './brands/brands.module';
 
-console.log(process.env.FIREBASE_PROJECT_ID);
-
 @Module({
   imports: [
     AuthModule,

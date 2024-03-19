@@ -1,32 +1,32 @@
 import { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { api } from '../lib/config/api-config'
-import { signInWithGoogle } from '../lib/config/firebase.config'
-import { useAuthStore } from '../lib/hooks/use-auth-store'
-import { useSession } from '../lib/hooks/use-session'
+// import { useNavigate } from 'react-router-dom'
+// import { api } from '../lib/config/api-config'
+// import { signInWithGoogle } from '../lib/config/firebase.config'
+// import { useAuthStore } from '../lib/hooks/use-auth-store'
+// import { useSession } from '../lib/hooks/use-session'
 import { useProducts } from '../lib/hooks/use-products'
 import { Products } from '../components/products'
-import { LoginModal } from '../components/modals/login.modal'
+// import { LoginModal } from '../components/modals/login.modal'
 
 export function HomePage() {
-  const session = useSession()
-  const navigate = useNavigate()
-  const [isModalOpen, setIsModalOpen] = useState(false)
+  // const session = useSession()
+  // const navigate = useNavigate()
+  // const [isModalOpen, setIsModalOpen] = useState(false)
   const [currentPage, setCurrentPage] = useState(1)
 
-  const authStore = useAuthStore()
+  // const authStore = useAuthStore()
   const { fetchProducts, products, status, totalPages } = useProducts(
     undefined,
     currentPage
   )
 
-  const handleModalOpen = () => {
-    setIsModalOpen(true)
-  }
+  // const handleModalOpen = () => {
+  //   setIsModalOpen(true)
+  // }
 
-  const handleModalClose = () => {
-    setIsModalOpen(false)
-  }
+  // const handleModalClose = () => {
+  //   setIsModalOpen(false)
+  // }
 
   const handlePrevPage = () => {
     if (currentPage > 1) {
@@ -40,33 +40,33 @@ export function HomePage() {
     }
   }
 
-  const loginMutation = api.auth.login.useMutation({
-    onSuccess(data) {
-      authStore.set({
-        status: 'authenticated',
-        user: data.body,
-      })
-      navigate('/dashboard')
-      handleModalClose()
-    },
-  })
+  // const loginMutation = api.auth.login.useMutation({
+  //   onSuccess(data) {
+  //     authStore.set({
+  //       status: 'authenticated',
+  //       user: data.body,
+  //     })
+  //     navigate('/dashboard')
+  //     handleModalClose()
+  //   },
+  // })
 
   useEffect(() => {
     fetchProducts.refetch()
   }, [currentPage])
 
-  async function handleSignIn(): Promise<void> {
-    try {
-      const userCredentials = await signInWithGoogle()
-      const accessToken = await userCredentials.user.getIdToken()
-      await loginMutation.mutateAsync({
-        headers: { authorization: `Bearer ${accessToken}` },
-        body: null,
-      })
-    } catch (error) {
-      console.error(error)
-    }
-  }
+  // async function handleSignIn(): Promise<void> {
+  //   try {
+  //     const userCredentials = await signInWithGoogle()
+  //     const accessToken = await userCredentials.user.getIdToken()
+  //     await loginMutation.mutateAsync({
+  //       headers: { authorization: `Bearer ${accessToken}` },
+  //       body: null,
+  //     })
+  //   } catch (error) {
+  //     console.error(error)
+  //   }
+  // }
 
   return (
     <div className='container mx-auto px-6 py-3'>
@@ -97,37 +97,37 @@ export function HomePage() {
           E-commerce
         </h1>
         <div className='flex items-center justify-end w-full'>
-          {session.status === 'authenticated' ? (
-            <nav>
-              <a
-                href='/dashboard'
-                className='mr-10 text-gray-600 hover:text-slate-500'
-              >
-                Ir al dashboard
-              </a>
-              <button
+          {/* {session.status === 'authenticated' ? ( */}
+          <nav>
+            <a
+              href='/dashboard'
+              className='mr-10 text-gray-600 hover:text-slate-500'
+            >
+              Ir al dashboard
+            </a>
+            {/* <button
                 className='bg-blue-500 text-white px-4 py-2 rounded-md mr-2'
                 onClick={() => session.signOut()}
               >
                 Cerrar sesión
-              </button>
-            </nav>
-          ) : (
+              </button> */}
+          </nav>
+          {/* ) : (
             <button
               className='bg-gray-400 text-white px-4 py-2 rounded-md mr-2'
               onClick={handleModalOpen}
             >
               Iniciar sesión
             </button>
-          )}
+          )} */}
         </div>
       </nav>
 
-      <LoginModal
+      {/* <LoginModal
         isOpen={isModalOpen}
         onClose={handleModalClose}
         handleSignIn={handleSignIn}
-      />
+      /> */}
       <Products
         products={products}
         status={status}

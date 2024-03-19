@@ -1,35 +1,31 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { api } from '../lib/config/api-config'
-import { useProducts } from '../lib/hooks/use-products'
 import { useProductsStore } from '../lib/hooks/use-products-store'
 import { Pagination } from './pagination'
 import { Product } from '../lib/api-client'
 import { UpdateProductModal } from './modals/update-product.modal'
 
-export function UpdateProduct() {
-  const [currentPage, setCurrentPage] = useState(1)
+interface Props {
+  products: Product[]
+  currentPage: number
+  totalPages: number
+  setCurrentPage: (page: number) => void
+  handlePrevPage: () => void
+  handleNextPage: () => void
+}
+export function UpdateProduct({
+  products,
+  currentPage,
+  totalPages,
+  setCurrentPage,
+  handlePrevPage,
+  handleNextPage,
+}: Props) {
   const [editingProduct, setEditingProduct] = useState<
     Partial<Product> | undefined
   >(undefined)
   const [isModalOpen, setIsModalOpen] = useState(false)
-  const { products, fetchProducts, totalPages } = useProducts(
-    undefined,
-    currentPage,
-    4
-  )
   const productsStore = useProductsStore()
-
-  const handlePrevPage = () => {
-    if (currentPage > 1) {
-      setCurrentPage(currentPage - 1)
-    }
-  }
-
-  const handleNextPage = () => {
-    if (currentPage < totalPages) {
-      setCurrentPage(currentPage + 1)
-    }
-  }
 
   const handleModalOpen = () => {
     setIsModalOpen(true)
@@ -38,10 +34,6 @@ export function UpdateProduct() {
   const handleModalClose = () => {
     setIsModalOpen(false)
   }
-
-  useEffect(() => {
-    fetchProducts.refetch()
-  }, [currentPage])
 
   const updateProductMutation = api.product.updateProduct.useMutation()
 

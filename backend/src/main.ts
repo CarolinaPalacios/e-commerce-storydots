@@ -21,6 +21,7 @@ async function bootstrap() {
     origin: [
       'https://e-commerce-storydots-challenge.web.app',
       'https://e-commerce-xkhk.onrender.com',
+      'http://localhost:5173',
     ],
     credentials: true,
   });

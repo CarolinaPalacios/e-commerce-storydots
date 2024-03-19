@@ -1,33 +1,29 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { api } from '../lib/config/api-config'
-import { useProducts } from '../lib/hooks/use-products'
 import { useProductsStore } from '../lib/hooks/use-products-store'
 import { Pagination } from './pagination'
 import { DeleteProductModal } from './modals/delete-product.modal'
 import { Product } from '../lib/api-client'
 
-export function DeleteProduct() {
-  const [currentPage, setCurrentPage] = useState(1)
+interface Props {
+  products: Product[]
+  currentPage: number
+  totalPages: number
+  setCurrentPage: (page: number) => void
+  handlePrevPage: () => void
+  handleNextPage: () => void
+}
+export function DeleteProduct({
+  products,
+  currentPage,
+  totalPages,
+  setCurrentPage,
+  handlePrevPage,
+  handleNextPage,
+}: Props) {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [productToDelete, setProductToDelete] = useState<Product | null>(null)
-  const { products, fetchProducts, totalPages } = useProducts(
-    undefined,
-    currentPage,
-    4
-  )
   const productsStore = useProductsStore()
-
-  const handlePrevPage = () => {
-    if (currentPage > 1) {
-      setCurrentPage(currentPage - 1)
-    }
-  }
-
-  const handleNextPage = () => {
-    if (currentPage < totalPages) {
-      setCurrentPage(currentPage + 1)
-    }
-  }
 
   const handleModalOpen = (product: Product) => {
     setProductToDelete(product)
@@ -38,11 +34,6 @@ export function DeleteProduct() {
     setIsModalOpen(false)
     setProductToDelete(null)
   }
-
-  useEffect(() => {
-    fetchProducts.refetch()
-    setCurrentPage(1)
-  }, [currentPage, products])
 
   const deleteProductMutation = api.product.deleteProduct.useMutation()
 

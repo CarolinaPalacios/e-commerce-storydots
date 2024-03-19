@@ -3,14 +3,14 @@ import {
   HttpStatus,
   Logger,
   Param,
-  UseGuards,
+  // UseGuards,
   Body,
   Query,
-  Delete,
+  // Delete,
 } from '@nestjs/common';
 import { TsRestException, TsRestHandler, tsRestHandler } from '@ts-rest/nest';
 import { contracts } from '../lib/api-client';
-import { FirebaseAuthGuard } from '../auth/guards/firebase-auth.guard';
+// import { FirebaseAuthGuard } from '../auth/guards/firebase-auth.guard';
 import { ProductsService } from './products.service';
 import { CreateProductDto } from './dto/create-product.dto';
 import { UpdateProductDto } from './dto/update-product.dto';
@@ -70,7 +70,7 @@ export class ProductsController {
   }
 
   @TsRestHandler(contracts.product.createProduct)
-  @UseGuards(FirebaseAuthGuard)
+  // @UseGuards(FirebaseAuthGuard)
   public async createProduct(@Body() createProductDto: CreateProductDto) {
     return tsRestHandler(contracts.product.createProduct, async () => {
       try {
@@ -94,7 +94,7 @@ export class ProductsController {
   }
 
   @TsRestHandler(contracts.product.updateProduct)
-  @UseGuards(FirebaseAuthGuard)
+  // @UseGuards(FirebaseAuthGuard)
   public async updateProduct(
     @Param('id') id: string,
     @Body() updateProductDto: UpdateProductDto,
@@ -123,7 +123,7 @@ export class ProductsController {
   }
 
   @TsRestHandler(contracts.product.deleteProduct)
-  @UseGuards(FirebaseAuthGuard)
+  // @UseGuards(FirebaseAuthGuard)
   public async deleteProduct(@Param('id') id: string) {
     return tsRestHandler(contracts.product.deleteProduct, async () => {
       try {
@@ -145,8 +145,8 @@ export class ProductsController {
     });
   }
 
-  @Delete('/products')
-  public async deleteAllProducts() {
-    await this.productsService.deleteAllProducts();
-  }
+  // @Delete('/products')
+  // public async deleteAllProducts() {
+  //   await this.productsService.deleteAllProducts();
+  // }
 }
