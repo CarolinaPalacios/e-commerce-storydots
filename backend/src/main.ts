@@ -14,11 +14,14 @@ async function bootstrap() {
   app.use((req: Request, res: Response, next: NextFunction) => {
     res.setHeader('Cross-Origin-Opener-Policy', 'unsafe-none');
     // res.setHeader('Cross-Origin-Embedder-Policy', 'require-corp');
-    // next();
+    next();
   });
 
   app.enableCors({
-    origin: 'https://e-commerce-xkhk.onrender.com',
+    origin: [
+      'https://e-commerce-xkhk.onrender.com',
+      'https://e-commerce-storydots-challenge.firebaseapp.com',
+    ],
     credentials: true,
   });
   const port = process.env.PORT || 3000;
