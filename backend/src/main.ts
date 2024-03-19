@@ -19,8 +19,8 @@ async function bootstrap() {
 
   app.enableCors({
     origin: [
+      'https://e-commerce-storydots-challenge.web.app',
       'https://e-commerce-xkhk.onrender.com',
-      'https://e-commerce-storydots-challenge.web.app/',
     ],
     credentials: true,
   });
