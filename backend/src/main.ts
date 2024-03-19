@@ -12,9 +12,9 @@ async function bootstrap() {
   app.use(cookieParser());
 
   app.use((req: Request, res: Response, next: NextFunction) => {
-    res.setHeader('Cross-Origin-Opener-Policy', 'restrict-properties');
-    res.setHeader('Cross-Origin-Embedder-Policy', 'require-corp');
-    next();
+    res.setHeader('Cross-Origin-Opener-Policy', 'unsafe-none');
+    // res.setHeader('Cross-Origin-Embedder-Policy', 'require-corp');
+    // next();
   });
 
   app.enableCors({
