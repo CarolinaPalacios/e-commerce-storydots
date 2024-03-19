@@ -27,8 +27,8 @@ dependencies:
     specifier: 0.5.7
     version: 0.5.7
   '@ts-rest/core':
-    specifier: 3.33.1
-    version: 3.33.1(zod@3.22.4)
+    specifier: 3.30.5
+    version: 3.30.5(zod@3.22.4)
   '@ts-rest/nest':
     specifier: 3.33.1
     version: 3.33.1(@nestjs/common@10.3.4)(@nestjs/core@10.3.4)(rxjs@7.8.1)(zod@3.22.4)
@@ -1387,8 +1387,8 @@ packages:
     dev: false
     optional: true
 
-  /@ts-rest/core@3.33.1(zod@3.22.4):
-    resolution: {integrity: sha512-ZAFr310dr/doIdyym8BbTiNmkq0jR5uI1Fo+JgyQjfellbtfXvBe+OK3Wldp1jPaPb9oEtDSEWhF0MsQTOrCWA==}
+  /@ts-rest/core@3.30.5(zod@3.22.4):
+    resolution: {integrity: sha512-j2sgvk3x8wZiCyhB3ij0I287FgkngCGRHXFBxQ9HtZ9mxQuIIDfibi1yD/ydNvNif0pA6BDdASGQY1WjfqUC3g==}
     peerDependencies:
       zod: ^3.22.3
     peerDependenciesMeta:

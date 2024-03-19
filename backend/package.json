@@ -27,7 +27,7 @@
     "@nestjs/platform-express": "^10.0.0",
     "@prisma/client": "5.10.2",
     "@swc/helpers": "0.5.7",
-    "@ts-rest/core": "3.33.1",
+    "@ts-rest/core": "3.30.5",
     "@ts-rest/nest": "3.33.1",
     "class-transformer": "0.5.1",
     "class-validator": "0.14.1",
