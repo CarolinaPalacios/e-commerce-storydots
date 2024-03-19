@@ -1,8 +1,7 @@
-import React from 'react'
 // import { AuthWrapper } from '../components/layouts/auth.wrapper';
 
 import { Dashboard } from '../components/dashboard'
-export const DashboardPage: React.FC = () => {
+export function DashboardPage() {
   return (
     // <AuthWrapper>
     <Dashboard />
