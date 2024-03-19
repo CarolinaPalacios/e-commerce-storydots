@@ -1,0 +1,214 @@
+{
+  "brands": [
+    {
+      "name": "Nike",
+      "logo_url": "https://logopng.com.br/logos/nike-99.svg",
+      "products": [
+        {
+          "name": "Air Max 90 Futura",
+          "description": "Zapatillas de moda para mujer",
+          "image_url": "https://nikearprod.vtexassets.com/arquivos/ids/702329-800-800?width=800&height=800&aspect=true",
+          "price": 300
+        },
+        {
+          "name": "Air Force 1 Low Retro",
+          "description": "Zapatillas de moda para hombre",
+          "image_url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4ea47b43-2415-4702-81b6-097f89331ff1/air-force-1-low-retro-mens-shoes-1VHstQ.png",
+          "price": 350
+        },
+        {
+          "name": "Dri-FIT Challenger",
+          "description": "Short de running para hombre",
+          "image_url": "https://nikearprod.vtexassets.com/arquivos/ids/533275-1400-1400?v=638161406842070000&width=1400&height=1400&aspect=true",
+          "price": 60
+        },
+        {
+          "name": "Repel",
+          "description": "Campera de running para mujer",
+          "image_url": "https://nikearprod.vtexassets.com/arquivos/ids/680774-1400-1400?v=638224558728800000&width=1400&height=1400&aspect=true",
+          "price": 120
+        }
+      ]
+    },
+    {
+      "name": "Adidas",
+      "logo_url": "https://www.svgrepo.com/show/329847/adidas.svg",
+      "products": [
+        {
+          "name": "Camiseta titular authentic Argentina 24",
+          "description": "Camiseta de hombre",
+          "image_url": "https://assets.adidas.com/images/w_303,h_303,f_auto,q_auto,fl_lossy,c_fill,g_auto/290b5d8860c94a6c868a275e70c3c8cb_9366/camiseta-titular-authentic-argentina-24.jpg",
+          "price": 100
+        },
+        {
+          "name": "Terrex AX3",
+          "description": "Zapatillas de senderismo",
+          "image_url": "https://assets.adidas.com/images/w_600,f_auto,q_auto/d11e50e7664e498e92abac0800b2780f_9366/Zapatillas_de_Senderismo_Terrex_AX3_Verde_FX4689_01_standard.jpg",
+          "price": 130
+        },
+        {
+          "name": "Dropset Trainer",
+          "description": "Zapatillas de entrenamiento",
+          "image_url": "https://assets.adidas.com/images/w_600,f_auto,q_auto/dc017a7102264fcdb8a7ae6f011e0cdd_9366/Zapatillas_Dropset_Trainer_Verde_GW3900_01_standard.jpg",
+          "price": 80
+        },
+        {
+          "name": "Z.N.E Premium Hoodie",
+          "description": "Buzo elástico de hombre",
+          "image_url": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/87dd434772294dfcbf77bdb135de556d_9366/Buzo_adidas_Z.N.E._Premium_Hoodie_Rosa_IN5117_21_model.jpg",
+          "price": 180
+        }
+      ]
+    },
+    {
+      "name": "Puma",
+      "logo_url": "https://www.svgrepo.com/show/303470/puma-logo-logo.svg",
+      "products": [
+        {
+          "name": "Suede Blue x RIPNDIP",
+          "description": "Zapatillas Puma x RIPNDIP",
+          "image_url": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_706,h_706/global/393537/01/sv01/fnd/ARG/fmt/png",
+          "price": 140
+        },
+        {
+          "name": "Velophasis Phased",
+          "description": "Zapatillas de running para mujer",
+          "image_url": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_706,h_706/global/389365/03/sv01/fnd/ARG/fmt/png",
+          "price": 200
+        },
+        {
+          "name": "Remera x Bob Esponja",
+          "description": "Remera Puma x Bob Esponja para niños",
+          "image_url": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/622217/39/mod01/fnd/ARG/fmt/png",
+          "price": 50
+        },
+        {
+          "name": "First Mile",
+          "description": "Campera de running para hombre",
+          "image_url": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_480,h_480/global/523917/51/mod01/fnd/ARG/fmt/png",
+          "price": 120
+        }
+      ]
+    },
+    {
+      "name": "Reebok",
+      "logo_url": "https://reebokarg.vtexassets.com/assets/vtex/assets-builder/reebokarg.reebok-master/1.2.154/svgs/reebok-logo___62e1f32a4607c021b7fea930b1231916.svg",
+      "products": [
+        {
+          "name": "Identity",
+          "description": "Remera Crop de mujer",
+          "image_url": "https://reebokarg.vtexassets.com/arquivos/ids/216557-1532-1532?v=638446806848770000&width=1532&height=1532&aspect=true",
+          "price": 20
+        },
+        {
+          "name": "Liquifect 90 2",
+          "description": "Zapatillas de running para mujer",
+          "image_url": "https://reebokarg.vtexassets.com/arquivos/ids/192525-1532-1532?v=638201464201270000&width=1532&height=1532&aspect=true",
+          "price": 70
+        },
+        {
+          "name": "One Series Training",
+          "description": "Gorra de visera",
+          "image_url": "https://reebokarg.vtexassets.com/arquivos/ids/157863-1532-1532?v=637988055457870000&width=1532&height=1532&aspect=true",
+          "price": 10
+        },
+        {
+          "name": "Zig Dynamica 4",
+          "description": "Zapatillas de running para hombre",
+          "image_url": "https://reebokarg.vtexassets.com/arquivos/ids/210906-1532-1532?v=638416825044200000&width=1532&height=1532&aspect=true",
+          "price": 110
+        }
+      ]
+    },
+    {
+      "name": "Vans",
+      "logo_url": "https://cdn.freebiesupply.com/logos/large/2x/vans-3-logo-svg-vector.svg",
+      "products": [
+        {
+          "name": "U Old Skool",
+          "description": "Zapatillas de moda para hombre",
+          "image_url": "https://mmgrim2.azureedge.net/MediaFiles/Grimoldi/2023/10/31/9027073.jpg",
+          "price": 150
+        },
+        {
+          "name": "Classic Heathered Canoodle",
+          "description": "Medias de mujer 6.5-10 3PK",
+          "image_url": "https://mmgrim2.azureedge.net/MediaFiles/Grimoldi/2024/2/2/9341096.jpg",
+          "price": 25
+        },
+        {
+          "name": "Left Chest Logo Tee II",
+          "description": "Remera de hombre",
+          "image_url": "https://mmgrim2.azureedge.net/MediaFiles/Grimoldi/2024/2/15/9373347.jpg",
+          "price": 30
+        },
+        {
+          "name": "M Skate Slip-On",
+          "description": "Zapatillas urbanas de hombre",
+          "image_url": "https://mmgrim2.azureedge.net/MediaFiles/Grimoldi/2023/5/31/8433985.jpg",
+          "price": 90
+        }
+      ]
+    },
+    {
+      "name": "Montagne",
+      "logo_url": "https://d368r8jqz0fwvm.cloudfront.net/themes/mtg2018/img/montagne-logo.svg",
+      "products": [
+        {
+          "name": "Vento GTX",
+          "description": "Zapatillas de senderismo",
+          "image_url": "https://d368r8jqz0fwvm.cloudfront.net/48705-product_lg/zapatillas-de-hombre-vento-gtx.jpg",
+          "price": 130
+        },
+        {
+          "name": "Hanckok",
+          "description": "Mochila de trekking",
+          "image_url": "https://d368r8jqz0fwvm.cloudfront.net/36462-product_lg/mochila-hanckok-40-lts.jpg",
+          "price": 250
+        },
+        {
+          "name": "Arthur",
+          "description": "Buzo de hombre",
+          "image_url": "https://d368r8jqz0fwvm.cloudfront.net/48151-product_lg/buzo-de-hombre-arthur.jpg",
+          "price": 80
+        },
+        {
+          "name": "Dua",
+          "description": "Chaleco de mujer",
+          "image_url": "https://d368r8jqz0fwvm.cloudfront.net/47405-product_lg/chaleco-de-mujer-dua.jpg",
+          "price": 60
+        }
+      ]
+    },
+    {
+      "name": "Columbia",
+      "logo_url": "https://imgs.search.brave.com/NPeDmNKtkmRtFbWdiU3e0OMXVABSbvzet2j99BjW3tM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2MyL0NvbHVtYmlh/X1Nwb3J0c3dlYXJf/Q29fbG9nby5zdmc.svg",
+      "products": [
+        {
+          "name": "Evapouration",
+          "description": "Campera impermeable de mujer",
+          "image_url": "https://scandinavianar.vtexassets.com/arquivos/ids/175751-800-auto?v=638241777794900000&width=800&height=auto&aspect=true",
+          "price": 300
+        },
+        {
+          "name": "Silve.R.2.Ls",
+          "description": "Camisa de hombre",
+          "image_url": "https://scandinavianar.vtexassets.com/arquivos/ids/175322-800-auto?v=638230421886600000&width=800&height=auto&aspect=true",
+          "price": 150
+        },
+        {
+          "name": "Col.Hike Ss Crew",
+          "description": "Remera de mujer",
+          "image_url": "https://columbiaar.vtexassets.com/arquivos/ids/179401-500-auto?v=638422226382100000&width=500&height=auto&aspect=true",
+          "price": 60
+        },
+        {
+          "name": "Trailstrom Mid",
+          "description": "Zapatillas impermeables de mujer",
+          "image_url": "https://scandinavianar.vtexassets.com/arquivos/ids/179091-800-auto?v=638367939716800000&width=800&height=auto&aspect=true",
+          "price": 250
+        }
+      ]
+    }
+  ]
+}
