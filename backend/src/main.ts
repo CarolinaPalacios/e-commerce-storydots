@@ -10,10 +10,7 @@ async function bootstrap() {
   app.setGlobalPrefix(globalPrefix);
   app.use(cookieParser());
 
-  app.enableCors({
-    origin: 'http://localhost:5173',
-    credentials: true,
-  });
+  app.enableCors();
   const port = process.env.PORT || 3000;
   await app.listen(port);
   Logger.log(
