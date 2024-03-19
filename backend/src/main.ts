@@ -10,7 +10,10 @@ async function bootstrap() {
   app.setGlobalPrefix(globalPrefix);
   app.use(cookieParser());
 
-  app.enableCors();
+  app.enableCors({
+    origin: 'https://e-commerce-xkhk.onrender.com',
+    credentials: true,
+  });
   const port = process.env.PORT || 3000;
   await app.listen(port);
   Logger.log(
