@@ -20,9 +20,9 @@ E-commerce desarrollado como Challenge para StoryDots.
 E-commerce Storydots es una aplicación web diseñada para gestionar productos de una tienda en línea. Permite a los usuarios crear, editar, eliminar y ver productos disponibles en el catálogo. El proyecto está dividido en un backend desarrollado con NestJS y un frontend construido con ReactJS.
 
 <div style="display: flex; margin-left: 10px;">
-<img src="./assets/home.png" alt="Home" style="width: 48%;">
+<img src="./images/home.png" alt="Home" style="width: 48%;">
   
-  <img src="./assets/detail.png" alt="Detail" style="width: 48%; margin-left: 10px;">
+  <img src="./images/detail.png" alt="Detail" style="width: 48%; margin-left: 10px;">
 </div>
 
 ## Funcionalidades
