@@ -1,8 +1,10 @@
 import { Controller, HttpStatus, Logger, Param } from '@nestjs/common';
 import { TsRestHandler, tsRestHandler } from '@ts-rest/nest';
+import { ApiTags } from '@nestjs/swagger';
 import { contracts } from '../lib/api-client';
 import { BrandsService } from './brands.service';
 
+@ApiTags('brands')
 @Controller()
 export class BrandsController {
   private readonly logger = new Logger(BrandsController.name);

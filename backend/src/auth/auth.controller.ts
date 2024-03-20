@@ -8,10 +8,12 @@ import {
 } from '@nestjs/common';
 import { TsRestException, TsRestHandler, tsRestHandler } from '@ts-rest/nest';
 import { Response } from 'express';
+import { ApiTags } from '@nestjs/swagger';
 import { AuthService } from './auth.service';
 import { contracts } from '../lib/api-client';
 import { FirebaseAuthGuard, ReqWithUser } from './guards/firebase-auth.guard';
 
+@ApiTags('auth')
 @Controller()
 export class AuthController {
   private readonly logger = new Logger(AuthController.name);

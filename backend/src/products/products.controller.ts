@@ -9,12 +9,14 @@ import {
   // Delete,
 } from '@nestjs/common';
 import { TsRestException, TsRestHandler, tsRestHandler } from '@ts-rest/nest';
+import { ApiTags } from '@nestjs/swagger';
 import { contracts } from '../lib/api-client';
 // import { FirebaseAuthGuard } from '../auth/guards/firebase-auth.guard';
 import { ProductsService } from './products.service';
 import { CreateProductDto } from './dto/create-product.dto';
 import { UpdateProductDto } from './dto/update-product.dto';
 
+@ApiTags('products')
 @Controller()
 export class ProductsController {
   private readonly logger = new Logger(ProductsController.name);
@@ -23,8 +25,8 @@ export class ProductsController {
 
   @TsRestHandler(contracts.product.getAllProducts)
   public async getAllProducts(
-    @Query('page') page: number,
-    @Query('pageSize') pageSize: number,
+    @Query('page') page?: number,
+    @Query('pageSize') pageSize?: number,
   ) {
     return tsRestHandler(contracts.product.getAllProducts, async () => {
       try {

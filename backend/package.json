@@ -25,6 +25,7 @@
     "@nestjs/config": "^3.2.0",
     "@nestjs/core": "^10.0.0",
     "@nestjs/platform-express": "^10.0.0",
+    "@nestjs/swagger": "7.3.0",
     "@prisma/client": "5.10.2",
     "@swc/helpers": "0.5.7",
     "@ts-rest/core": "3.30.5",
@@ -36,6 +37,7 @@
     "firebase-admin": "12.0.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1",
+    "swagger-ui-express": "5.0.0",
     "tslib": "2.6.2",
     "zod": "3.22.4"
   },
