@@ -2,7 +2,7 @@
 
 E-commerce desarrollado como Challenge para StoryDots.
 
-[![Visita la web](https://img.shields.io/badge/Visita%20la%20web-black?style=for-the-badge&logo=firebase&logoColor=yellow)](https://e-commerce-storydots.vercel.app/)
+[![Visita la web](https://img.shields.io/badge/Visita%20la%20web-black?style=for-the-badge&logo=firebase&logoColor=yellow)](https://e-commerce-storydots-challenge.web.app/)
 
 **Desarrollado con:**
 
