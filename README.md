@@ -51,7 +51,7 @@ E-commerce Storydots es una aplicación web diseñada para gestionar productos d
 npm i -g pnpm
 ```
 
-- [!NestJS](https://nestjs.com): NestJS se usa como framework de Node.js para el backend de este proyecto. Para instalarlo globalmente utiliza el siguiente comando:
+- [NestJS](https://nestjs.com): NestJS se usa como framework de Node.js para el backend de este proyecto. Para instalarlo globalmente utiliza el siguiente comando:
 
 ```
 npm i -g @nestjs/cli
