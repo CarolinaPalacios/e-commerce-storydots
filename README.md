@@ -194,4 +194,4 @@ Y listo, puedes volver a iniciar la aplicación, deberías poder loguearte con e
 
 ## 🤝 Ayuda
 
-Si conoces alguna solución para el problema a la hora de construir la aplicación integrando Firebase, puedes mandar un pull request y la estaré revisando 🙌.
+Si conoces alguna solución para el problema a la hora de construir la aplicación integrando Firebase, puedes contactar conmigo o puedes mandar un pull request y la estaré revisando 🙌.
