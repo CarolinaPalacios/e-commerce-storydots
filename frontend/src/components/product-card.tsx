@@ -44,7 +44,7 @@ export function ProductCard({ product }: Props) {
           onClick={() => {
             navigate(`/product/${product.id}`)
           }}
-          className='absolute bottom-32 right-2 p-2 rounded-full bg-blue-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-blue-500'
+          className='absolute bottom-24 right-2 p-2 rounded-full bg-blue-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-blue-500'
         >
           <CiSquareMore className='w-6 h-6' />
         </button>
