@@ -1,0 +1,7 @@
+{
+  "name": "api-storydots",
+  "type": "api",
+  "buildCommand": "bash build.sh",
+  "devCommand": "pnpm start:dev",
+  "main": "dist/main.js"
+}
