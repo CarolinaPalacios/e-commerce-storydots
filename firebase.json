@@ -8,6 +8,6 @@
         "destination": "/index.html"
       }
     ],
-    "predeploy": ["cd frontend && pnpm install && pnpm run build"]
+    "predeploy": ["cd frontend && npm install && npm run build"]
   }
 }
