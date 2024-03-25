@@ -24,8 +24,8 @@ export function DeleteProductModal({
         className='bg-black opacity-45 fixed inset-0 transition-opacity'
         onClick={onClose}
       />
-      <div className='relative mx-auto  bg-white shadow-2xl rounded-lg md:p-20 transform transition-all md:max-w-xl w-full '>
-        <button onClick={onClose} className='absolute top-5 right-5 '>
+      <div className='relative mx-auto bg-white shadow-2xl rounded-lg md:p-10 p-10 transform transition-all md:max-w-xl w-full '>
+        <button onClick={onClose} className='absolute top-5 right-5'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             fill='none'
@@ -41,11 +41,11 @@ export function DeleteProductModal({
             />
           </svg>
         </button>
-        <h1 className='text-3xl font-bold'>Eliminar Producto</h1>
-        <p className='text-sm text-gray-500'>
+        <h1 className='md:text-3xl text-xl font-bold'>Eliminar Producto</h1>
+        <p className='text-sm text-gray-500 py-4'>
           ¿Estás seguro de que quieres eliminar este producto?
         </p>
-        <code>{product?.name}</code>
+        <code className='text-sm'>{product?.name}</code>
         <div className='flex flex-row mt-10 space-x-2 justify-evenly'>
           <button
             onClick={() => handleDelete(product?.id)}

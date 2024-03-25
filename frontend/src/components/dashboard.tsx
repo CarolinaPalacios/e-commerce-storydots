@@ -52,7 +52,7 @@ export function Dashboard() {
 
   return (
     <div className='h-screen w-full bg-white relative flex overflow-hidden'>
-      <aside className='h-full w-16 flex flex-col space-y-10 items-center justify-center relative bg-gray-800 text-white'>
+      <aside className='h-full md:w-16 flex flex-col space-y-10 items-center justify-center relative bg-gray-800 text-white'>
         <Link
           className='h-10 w-10 flex items-center justify-center rounded-lg cursor-pointer hover:text-gray-800 hover:bg-white  hover:duration-300 hover:ease-linear focus:bg-white'
           to='/'
@@ -73,9 +73,12 @@ export function Dashboard() {
       </aside>
 
       <div className='w-full h-full flex flex-col justify-between bg-blue-50'>
-        <header className='h-16 w-full flex items-center relative justify-end px-5 space-x-10 bg-gray-800'>
+        <header className='md:h-16 h-10 w-full flex items-center relative justify-end px-5 space-x-10 bg-gray-800'>
           <nav>
-            <a href='/' className='mr-10 text-gray-600 hover:text-slate-500'>
+            <a
+              href='/'
+              className='md:mr-10 text-sm md:text-base text-gray-600 hover:text-slate-500'
+            >
               Ir al inicio
             </a>
           </nav>

@@ -18,7 +18,7 @@ export const Pagination: React.FC<PaginationProps> = ({
 }) => {
   return (
     <nav className='flex items-center justify-center p-5'>
-      <ul className='flex'>
+      <ul className='flex flex-wrap'>
         <li>
           <button
             onClick={onPrevClick}

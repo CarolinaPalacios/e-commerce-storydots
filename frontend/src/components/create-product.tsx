@@ -67,19 +67,19 @@ export const CreateProduct = () => {
   }, [])
 
   return (
-    <div className='flex items-center justify-center p-12'>
+    <div className='flex items-center justify-center md:p-12 p-4'>
       <div className='mx-auto w-full max-w-[550px]'>
-        <h1 className='text-2xl font-medium text-center mx-auto text-[#07074D] rounded-lg py-2 px-4'>
+        <h1 className='md:text-2xl text-lg font-medium text-center mx-auto text-[#07074D] rounded-lg md:py-2 px-4'>
           Crear Producto
         </h1>
 
-        <form onSubmit={submitForm} className='mt-10'>
+        <form onSubmit={submitForm} className='md:mt-10 mt-5'>
           <div className='-mx-3 flex flex-wrap'>
             <div className='w-full px-3 sm:w-1/2'>
               <div className='mb-5'>
                 <label
                   htmlFor='name'
-                  className='mb-3 block text-base font-medium text-[#07074D]'
+                  className='mb-3 block text-sm md:text-base font-medium text-[#07074D]'
                 >
                   Nombre
                 </label>
@@ -90,7 +90,7 @@ export const CreateProduct = () => {
                   placeholder='Nombre del producto'
                   value={product.name}
                   onChange={handleInputChange}
-                  className='w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md'
+                  className='w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-sm md:text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md'
                 />
               </div>
             </div>
@@ -98,7 +98,7 @@ export const CreateProduct = () => {
               <div className='mb-5'>
                 <label
                   htmlFor='price'
-                  className='mb-3 block text-base font-medium text-[#07074D]'
+                  className='mb-3 block text-sm md:text-base font-medium text-[#07074D]'
                 >
                   Precio
                 </label>
@@ -108,7 +108,7 @@ export const CreateProduct = () => {
                   id='price'
                   value={product.price}
                   onChange={handleInputChange}
-                  className='w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md'
+                  className='w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-sm md:text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md'
                 />
               </div>
             </div>
@@ -116,7 +116,7 @@ export const CreateProduct = () => {
           <div className='mb-5'>
             <label
               htmlFor='image_url'
-              className='mb-3 block text-base font-medium text-[#07074D]'
+              className='mb-3 block text-sm md:text-base font-medium text-[#07074D]'
             >
               Imágen
             </label>
@@ -127,13 +127,13 @@ export const CreateProduct = () => {
               placeholder='URL de la imágen'
               value={product.image_url}
               onChange={handleInputChange}
-              className='w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md'
+              className='w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-sm md:text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md'
             />
           </div>
           <div className='mb-5'>
             <label
               htmlFor='description'
-              className='mb-3 block text-base font-medium text-[#07074D]'
+              className='mb-3 block text-sm md:text-base font-medium text-[#07074D]'
             >
               Descripción
             </label>
@@ -143,13 +143,13 @@ export const CreateProduct = () => {
               placeholder='Descripción del producto'
               value={product.description}
               onChange={handleInputChange}
-              className='w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md'
+              className='w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-sm md:text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md'
             />
           </div>
           <div className='mb-5'>
             <label
               htmlFor='brand'
-              className='mb-3 block text-base font-medium text-[#07074D]'
+              className='mb-3 block text-sm md:text-base font-medium text-[#07074D]'
             >
               Marca
             </label>
@@ -158,7 +158,7 @@ export const CreateProduct = () => {
               id='brand'
               value={selectedBrand}
               onChange={handleSelectChange}
-              className='w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md'
+              className='w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-sm md:text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md'
             >
               <option value=''>Elige una marca</option>
               {brands.map((brand) => (
@@ -172,7 +172,7 @@ export const CreateProduct = () => {
             type='submit'
             className='bg-blue-500 p-2 w-full hover:bg-blue-600 text-slate-100 font-medium rounded-md'
           >
-            Submit
+            Crear
           </button>
         </form>
       </div>

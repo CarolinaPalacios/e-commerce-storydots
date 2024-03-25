@@ -93,7 +93,7 @@ export function HomePage() {
           </svg>
           <span className='mx-1 text-sm'>Argentina</span>
         </div>
-        <h1 className='w-full text-gray-700 md:text-center text-2xl font-semibold'>
+        <h1 className='w-full text-gray-700 md:text-center md:text-xl sm:text-lg lg:text-2xl font-semibold'>
           E-commerce
         </h1>
         <div className='flex items-center justify-end w-full'>
@@ -101,7 +101,7 @@ export function HomePage() {
           <nav>
             <a
               href='/dashboard'
-              className='mr-10 text-gray-600 hover:text-slate-500'
+              className='md:mr-10 text-xs md:text-sm text-gray-600 hover:text-slate-500'
             >
               Ir al dashboard
             </a>

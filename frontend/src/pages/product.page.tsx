@@ -1,10 +1,11 @@
 import { useEffect } from 'react'
 import { LiaArrowCircleLeftSolid } from 'react-icons/lia'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { useProducts } from '../lib/hooks/use-products'
 
 export const ProductDetail = () => {
   const { id } = useParams()
+  const navigate = useNavigate()
   const { fetchProduct, product } = useProducts(id)
 
   useEffect(() => {
@@ -13,10 +14,10 @@ export const ProductDetail = () => {
 
   return (
     <section className='text-gray-700 body-font overflow-hidden bg-white'>
-      <div className='container px-5 py-24 mx-auto'>
+      <div className='container px-5 lg:py-20 2xl:py-24 mx-auto py-4'>
         <LiaArrowCircleLeftSolid
-          onClick={() => window.history.back()}
-          className='text-3xl cursor-pointer relative left-16 top-6'
+          onClick={() => navigate('/')}
+          className='text-3xl cursor-pointer relative lg:left-16 lg:top-6 right-1 bottom-2'
         />
 
         {product && (
